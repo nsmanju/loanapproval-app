@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loan Application Form</title>
+</head>
+
+<body>
+    <h1>Loan Application Form</h1>
+    <form action="/loan_approval" method="post">
+        <label for="credit_score">Credit Score:</label>
+        <input type="number" name="credit_score" required placeholder="Enter your credit score (e.g., 700)"><br>
+
+        <label for="income">Income:</label>
+        <input type="number" name="income" required placeholder="Enter your yearly income (e.g., INR250000)"><br>
+
+        <label for="loan_amount">Loan Amount:</label>
+        <input type="number" name="loan_amount" required
+            placeholder="Enter the loan amount requested (e.g., 20000)"><br>
+
+        <label for="loan_term">Loan Term (months):</label>
+        <input type="number" name="loan_term" required placeholder="Enter the loan term in months (e.g., 24)"><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" required placeholder="Enter your age (e.g., 30)"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>Guidelines:</p>
+    <ul>
+        <li>Credit Score: The credit score should be a number between 300 and 850.</li>
+        <li>Income: Your yearly income in INR.</li>
+        <li>Loan Amount: The amount you are requesting for the loan in INR.</li>
+        <li>Loan Term: The loan term in months, should be at least 12 months.</li>
+        <li>Age: Your age in years.</li>
+    </ul>
+</body>
+
+</html>
